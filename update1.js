@@ -24,3 +24,13 @@ $url = "dbe_rep_AuditExtCreationNotifComments.php?codUsr=" . $cUser .
 error_log("Generated URL: " . $url);
 
 echo 'Menu4_'.$cnt.'=new Array("Audit for Comments", "' . $url . '", "", 0,30,170);'."\n";
+
+
+// Add this debugging code
+$url = "dbe_rep_AuditExtCreationNotifComments.php?codUsr=" . $cUser . 
+       "&todo_type=" . $todo . 
+       "&codgrp=" . $cgrp . 
+       "&rptCode=". $rptCode[$i]. ;
+error_log("Generated URL: " . $url);
+
+echo 'Menu4_'.$cnt.'=new Array("'.$rptName[$i].'", "' . $url . '", "", 0,30,170);'."\n";
